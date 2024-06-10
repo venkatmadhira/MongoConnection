@@ -7,6 +7,24 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+    <servlet>
+        <servlet-name>AddUserServlet</servlet-name>
+        <servlet-class>com.example.servlets.AddUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddUserServlet</servlet-name>
+        <url-pattern>/addUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ValidateOtpServlet</servlet-name>
+        <servlet-class>com.example.servlets.ValidateOtpServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ValidateOtpServlet</servlet-name>
+        <url-pattern>/validateOtp</url-pattern>
+    </servlet-mapping>
 
 </web-app>
+
 
